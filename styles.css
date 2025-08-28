@@ -1,0 +1,89 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", serif;
+  background: #fdfcf7;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* Menu container  */
+body > header, body > h2, body > ul {
+  max-width: 700px;
+  width: 100%;
+}
+
+/* Main box */
+body {
+  flex-direction: column;
+  align-items: center;
+}
+
+body > header, body > h2, body > ul {
+  background: #fff;
+}
+
+body > header {
+  border: 2px solid #000;
+  border-bottom: none;
+  padding: 20px;
+  text-align: center;
+}
+
+body > header h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Section headings */
+h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+/* Menu list */
+ul {
+  list-style: none;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+/* Each menu item */
+li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 1;
+}
+
+/* Dish vs description split */
+li::before {
+  content: "";
+}
+
+li {
+  font-weight: bold;
+}
+
+li::after {
+  content: " ";
+  flex: 1;
+  border-bottom: 1px dotted #999;
+  margin: 0 10px;
+}
+
+/* Make description lighter */
+li {
+  font-weight: normal;
+}
